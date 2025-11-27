@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Container,
   Paper,
@@ -11,15 +11,32 @@ import {
   ListItemText,
   IconButton,
   Divider,
+  CircularProgress,
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
-import { saveNote, deleteNote, Note } from "../services/notesService";
+import { saveNote, deleteNote, getNotes, Note } from "../services/notesService";
 
 const NotesScreen = () => {
   const [noteContent, setNoteContent] = useState("");
   const [notes, setNotes] = useState<Note[]>([]);
   const [loading, setLoading] = useState(false);
+  const [initialLoading, setInitialLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchNotes = async () => {
+      try {
+        const fetchedNotes = await getNotes();
+        setNotes(fetchedNotes);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "Failed to load notes");
+      } finally {
+        setInitialLoading(false);
+      }
+    };
+
+    fetchNotes();
+  }, []);
 
   const handleAddNote = async () => {
     if (!noteContent.trim()) {
@@ -89,7 +106,11 @@ const NotesScreen = () => {
 
         <Divider sx={{ mb: 2 }} />
 
-        {notes.length === 0 ? (
+        {initialLoading ? (
+          <Box display="flex" justifyContent="center" alignItems="center" py={4}>
+            <CircularProgress />
+          </Box>
+        ) : notes.length === 0 ? (
           <Typography variant="body1" color="text.secondary" align="center">
             No notes yet. Add your first note above!
           </Typography>

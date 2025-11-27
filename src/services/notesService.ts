@@ -4,8 +4,7 @@ export interface Note {
   createdAt?: string;
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api";
-
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
 export const saveNote = async (content: string): Promise<Note> => {
   const response = await fetch(`${API_BASE_URL}/notes`, {
     method: "POST",
