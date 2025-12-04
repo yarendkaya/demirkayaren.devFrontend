@@ -95,10 +95,18 @@ const NotesScreen = () => {
           />
           <Button
             variant="contained"
-            color="primary"
             onClick={handleAddNote}
             disabled={loading || !noteContent.trim()}
             fullWidth
+            sx={{
+              bgcolor: '#2f2f2f',
+              '&:hover': {
+                bgcolor: '#1f1f1f',
+              },
+              '&:disabled': {
+                bgcolor: '#3f3f3f',
+              }
+            }}
           >
             {loading ? "Saving..." : "Add Note"}
           </Button>
