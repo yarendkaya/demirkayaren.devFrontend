@@ -51,7 +51,7 @@ const Footer = () => {
             <GitHub />
           </IconButton>
           <IconButton
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/demirkayayaren/"
             target="_blank"
             sx={{
               color: 'text.secondary',
