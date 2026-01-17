@@ -114,7 +114,7 @@ const Hero = () => {
 
           <Stack direction="row" spacing={2}>
             <Button
-              href="https://github.com/yourusername"
+              href="https://github.com/yarendkaya"
               target="_blank"
               sx={{
                 minWidth: 'auto',
