@@ -12,8 +12,8 @@ const contactInfo = [
   {
     icon: <LinkedIn sx={{ fontSize: 28 }} />,
     title: 'LinkedIn',
-    value: 'linkedin.com/in/yourusername',
-    link: 'https://linkedin.com/in/yourusername',
+    value: 'linkedin.com/in/demirkayayaren',
+    link: 'https://www.linkedin.com/in/demirkayayaren/',
   },
   {
     icon: <GitHub sx={{ fontSize: 28 }} />,

@@ -126,7 +126,7 @@ const Hero = () => {
               <GitHub />
             </Button>
             <Button
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/demirkayayaren/"
               target="_blank"
               sx={{
                 minWidth: 'auto',
