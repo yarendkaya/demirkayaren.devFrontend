@@ -41,7 +41,7 @@ const Footer = () => {
           sx={{ mb: 4 }}
         >
           <IconButton
-            href="https://github.com/yourusername"
+            href="https://github.com/yarendkaya"
             target="_blank"
             sx={{
               color: 'text.secondary',

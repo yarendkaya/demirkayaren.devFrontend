@@ -18,8 +18,8 @@ const contactInfo = [
   {
     icon: <GitHub sx={{ fontSize: 28 }} />,
     title: 'GitHub',
-    value: 'github.com/yourusername',
-    link: 'https://github.com/yourusername',
+    value: 'github.com/yarendkaya',
+    link: 'https://github.com/yarendkaya',
   },
   {
     icon: <LocationOn sx={{ fontSize: 28 }} />,
