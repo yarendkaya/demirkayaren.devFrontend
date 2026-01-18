@@ -138,7 +138,7 @@ const Hero = () => {
               <LinkedIn />
             </Button>
             <Button
-              href="mailto:your.email@example.com"
+              href="mailto:yarendmrky65@gmail.com?subject=Hello%20from%20your%20portfolio"
               sx={{
                 minWidth: 'auto',
                 p: 1.5,
