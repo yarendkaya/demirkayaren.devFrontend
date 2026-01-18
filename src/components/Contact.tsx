@@ -6,8 +6,8 @@ const contactInfo = [
   {
     icon: <Email sx={{ fontSize: 28 }} />,
     title: 'Email',
-    value: 'your.email@example.com',
-    link: 'mailto:your.email@example.com',
+    value: 'yarendmrky65@gmail.com',
+    link: 'mailto:yarendmrky65@gmail.com?subject=Hello%20from%20your%20portfolio',
   },
   {
     icon: <LinkedIn sx={{ fontSize: 28 }} />,
