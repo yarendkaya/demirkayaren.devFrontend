@@ -60,26 +60,10 @@ const Header = () => {
           <Toolbar sx={{ justifyContent: 'space-between', py: 1 }}>
             <Box
               sx={{
-                display: 'flex',
-                alignItems: 'center',
                 cursor: 'pointer',
               }}
               onClick={() => scrollToSection('#home')}
-            >
-              <Terminal sx={{ color: 'primary.main', mr: 1 }} />
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                  background: 'linear-gradient(90deg, #00d9ff 0%, #7c4dff 100%)',
-                  backgroundClip: 'text',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                }}
-              >
-                YD
-              </Typography>
-            </Box>
+            />
 
             <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
               {navItems.map((item) => (
