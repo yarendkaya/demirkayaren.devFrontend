@@ -5,7 +5,7 @@ const skillCategories = [
   {
     title: 'Cloud Platforms',
     icon: <Cloud />,
-    skills: ['AWS', 'Azure', 'Google Cloud', 'DigitalOcean', 'Linode'],
+    skills: ['AWS', 'Azure'],
     color: '#FF9900',
   },
   {
