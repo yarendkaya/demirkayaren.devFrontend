@@ -23,7 +23,7 @@ const skillCategories = [
   {
     title: 'Infrastructure as Code',
     icon: <Settings />,
-    skills: ['Terraform', 'Ansible', 'Pulumi', 'CloudFormation', 'Vagrant'],
+    skills: ['Terraform', 'Ansible', 'Vagrant'],
     color: '#7B42BC',
   },
   {
