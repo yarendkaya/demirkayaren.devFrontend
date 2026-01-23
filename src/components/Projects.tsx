@@ -1,5 +1,5 @@
 import { Box, Container, Typography, Grid, Card, CardContent, CardActions, Button, Chip, Stack } from '@mui/material';
-import { GitHub, Launch, Cloud, Storage, Code } from '@mui/icons-material';
+import { GitHub, Launch } from '@mui/icons-material';
 import React from 'react';
 
 const projects: Array<{
