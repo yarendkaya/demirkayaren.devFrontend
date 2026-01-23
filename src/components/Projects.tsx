@@ -1,56 +1,14 @@
 import { Box, Container, Typography, Grid, Card, CardContent, CardActions, Button, Chip, Stack } from '@mui/material';
 import { GitHub, Launch, Cloud, Storage, Code } from '@mui/icons-material';
 
-const projects = [
-  {
-    title: 'Kubernetes Cluster Automation',
-    description: 'Automated Kubernetes cluster provisioning using Terraform and Ansible. Includes monitoring stack with Prometheus and Grafana, and GitOps deployment with ArgoCD.',
-    technologies: ['Terraform', 'Kubernetes', 'ArgoCD', 'Prometheus'],
-    icon: <Storage />,
-    github: 'https://github.com/yourusername/k8s-automation',
-    demo: null,
-  },
-  {
-    title: 'CI/CD Pipeline Framework',
-    description: 'Reusable CI/CD pipeline templates for GitHub Actions with support for multiple languages, security scanning, and automated deployments to AWS.',
-    technologies: ['GitHub Actions', 'Docker', 'AWS', 'Trivy'],
-    icon: <Code />,
-    github: 'https://github.com/yourusername/cicd-framework',
-    demo: null,
-  },
-  {
-    title: 'Cloud Infrastructure Templates',
-    description: 'Production-ready Terraform modules for AWS infrastructure including VPC, EKS, RDS, and S3 with best practices for security and cost optimization.',
-    technologies: ['Terraform', 'AWS', 'Python', 'Bash'],
-    icon: <Cloud />,
-    github: 'https://github.com/yourusername/aws-terraform',
-    demo: null,
-  },
-  {
-    title: 'Monitoring & Alerting Stack',
-    description: 'Complete observability solution with Prometheus, Grafana, Loki, and custom alerting rules. Includes dashboards for Kubernetes and application metrics.',
-    technologies: ['Prometheus', 'Grafana', 'Loki', 'AlertManager'],
-    icon: <Storage />,
-    github: 'https://github.com/yourusername/monitoring-stack',
-    demo: null,
-  },
-  {
-    title: 'Container Security Scanner',
-    description: 'Automated container image scanning pipeline that integrates with CI/CD workflows to detect vulnerabilities before deployment.',
-    technologies: ['Trivy', 'Docker', 'Python', 'Jenkins'],
-    icon: <Code />,
-    github: 'https://github.com/yourusername/container-scanner',
-    demo: null,
-  },
-  {
-    title: 'Infrastructure Cost Optimizer',
-    description: 'Tool for analyzing and optimizing cloud infrastructure costs. Provides recommendations for right-sizing instances and identifying unused resources.',
-    technologies: ['Python', 'AWS', 'Terraform', 'React'],
-    icon: <Cloud />,
-    github: 'https://github.com/yourusername/cost-optimizer',
-    demo: 'https://cost-optimizer-demo.com',
-  },
-];
+const projects: Array<{
+  title: string;
+  description: string;
+  technologies: string[];
+  icon: JSX.Element;
+  github: string;
+  demo: string | null;
+}> = [];
 
 const Projects = () => {
   return (
