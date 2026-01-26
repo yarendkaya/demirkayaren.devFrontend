@@ -27,7 +27,7 @@ jobs:
 
     #Build the project
     - name: Build Project
-      run: npm run build
+      run: npx vite build
       env:
         CI: false
         VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
