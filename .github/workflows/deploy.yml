@@ -29,6 +29,7 @@ jobs:
     - name: Build Project
       run: npm run build
       env:
+        CI: false
         VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
 
     # Trigger Deployment
